@@ -23,12 +23,12 @@ export default function About() {
         initial={{ opacity: 0, y: -80 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 2, duration: 0.2, ease: "easeInOut" }}
-        className="font-orbitron text-2xl md:text-4xl mb-4 font-bold">
+        className="font-orbitron text-xl md:text-4xl mb-4 font-bold">
           Hi, I’m {data.name}
         </motion.h1>
           <SplitText
           text="Frontend Developer"
-          className="text-start text-4xl md:text-5xl mb-4 font-bold "
+          className="text-start text-2xl md:text-5xl mb-4 font-bold "
           delay={100}
           duration={1.6}
           ease="power3.out"
