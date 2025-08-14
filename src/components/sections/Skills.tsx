@@ -14,7 +14,7 @@ export default function Skills() {
       </motion.h2>
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-4">
       <div className="w-full md:w-1/3 h-86  flex items-center justify-center">
-        <img src="/models/boypo.PNG" alt="skills image" />
+        <img src="/models/boyp.PNG" alt="skills image" />
       </div>
       <div className="flex flex-wrap gap-4 justify-center w-full md:w-1/2">
         {data.skills.map((skill, i) => (
