@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <section className="py-20 flex flex-col md:flex-row items-center justify-center">
       <div className="w-full md:w-1/3 h-86 py-8 flex items-center justify-center mb-8 md:mb-0">
-        <img src="/models/boycontact.png" alt="contact image" />
+        <img src="/models/boycon.PNG" alt="contact image" />
       </div>
       <GlassCard className="max-w-xl mx-auto text-center">
         <h2 className="font-clash text-4xl mb-4 border-b border-gray-600">Get In Touch</h2>
