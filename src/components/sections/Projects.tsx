@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Projects() {
   return (
-    <section className="py-20 px-4">
+    <section className="py-20 px-4 z-20 relative">
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -24,7 +24,7 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.15 }}
           >
-            <GlassCard>
+            <GlassCard className="z-10">
               <h3 className="font-orbitron text-2xl mb-2">{p.name}</h3>
               <p className="text-sm text-slate-400 mb-3">
                 {p.stack.join(" • ")}
