@@ -4,21 +4,23 @@ import GlassCard from "@/components/ui/GlassCard";
 import data from "@/data/sachin.json";
 import SplitText from "@/components/ui/SplitText";
 import { TypeAnimation } from "react-type-animation"
+import {FloatingShape} from "@/components/FloatingShape"
 
 export default function About() {
   return (
-    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 p-4">
+    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 p-4 relative overflow-hidden">
       
+      <FloatingShape />
       <motion.div
         initial={{ opacity: 0, y: -80 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, duration: 0.2, ease: "easeInOut" }}
-        className="w-full md:w-1/3 h-86  flex items-center justify-center">
+        className="w-full md:w-1/3 h-86  flex items-center justify-center relative z-20">
         <img src="/models/avatar.webp" alt="hero image" />
       </motion.div>
 
       {/* Text Card */}
-      <GlassCard className="w-full md:w-1/2 ">
+      <GlassCard className="w-full md:w-1/2 relative z-20">
         <motion.h1 
         initial={{ opacity: 0, y: -80 }}
         whileInView={{ opacity: 1, y: 0 }}

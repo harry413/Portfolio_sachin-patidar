@@ -8,11 +8,11 @@ export default function Skills() {
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        className="font-clash text-5xl text-center mb-12 font-bold"
+        className="font-clash text-5xl text-center mb-12 font-bold z-20"
       >
         Skills
       </motion.h2>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-4">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-4 z-20">
       <div className="w-full md:w-1/3 h-86  flex items-center justify-center">
         <img src="/models/boyp.PNG" alt="skills image" />
       </div>

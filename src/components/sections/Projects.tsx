@@ -9,11 +9,11 @@ export default function Projects() {
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        className="font-clash text-5xl text-center mb-12 font-bold"
+        className="font-clash text-5xl text-center mb-12 font-bold z-20"
       >
         My Work
       </motion.h2>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 z-20">
         {data.projects.map((p, i) => (
           <motion.a
             key={p.name}

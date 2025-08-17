@@ -7,7 +7,7 @@ export default function Experience(){
 return(
      <div>
             <section className="min-h-screen flex flex-col md:flex-row items-center justify-center p-4">
-                <GlassCard className="w-full md:w-1/2 ">
+                <GlassCard className="w-full md:w-1/2 z-20">
                <div className="flex flex-col items-center justify-center w-full">
                   <motion.h1 
                      initial={{ opacity: 0, y: 40 }}
@@ -66,7 +66,7 @@ return(
                initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 2, duration: 0.2, ease: "easeInOut" }}
-               className="w-full md:w-1/3 h-86 md:h-[600px] flex items-center justify-center">
+               className="w-full md:w-1/3 h-86 md:h-[600px] flex items-center justify-center z-20">
                   <img src="/models/boyexp.PNG" alt="exp image" />
                </motion.div>
             </section>
