@@ -4,30 +4,30 @@
   "linkedin": "https://www.linkedin.com/in/sachin-patidar-921578213/",
   "email": "sachinpatidar413@gmail.com",
   "phone": "+91-9589005828",
-  "skills": ["React", "Next.js", "TypeScript", "Node.js", "MongoDB", "Tailwindcss", "Bootstrap", "Figma", "Javascript", "HTML/CSS" ],
+  "skills": ["React", "Next.js", "TypeScript", "Node.js", "MongoDB", "Tailwindcss", "Bootstrap", "Figma", "Javascript", "HTML/CSS", "C++", "Redux", "Git/Github", "Three.js" ],
   "projects": [
     {
       "name": "HARRY_Iconhub",
       "stack": ["Next.js", "TailwindCSS", "TypeScript"],
-      "desc": "Re-usable icon & component library",
+      "desc": "Application for better Ui this provide animated and dyamic icons and User can also build and upload his icons",
       "link": "https://iconhub-mu.vercel.app/"
     },
     {
       "name": "HRIzon",
       "stack": ["Next.js", "TailwindCSS", "TypeScript"],
-      "desc": "Re-usable icon & component library",
+      "desc": "This help or reduce the effort for searching right people based on skills, experience.... ",
       "link": "https://hr-izon.vercel.app/"
     },
     {
       "name": "CAR RENTAL",
       "stack": ["Next.js", "TailwindCSS"],
-      "desc": "Full-stack car rental web app",
+      "desc": "Application for rent a car for temparory work ....",
       "link": "https://car-rental-eight-amber.vercel.app"
     },
     {
       "name": "ELEGANCE",
       "stack": ["Nextjs, tailwindcss, framer-motion"],
-      "desc": "Real-estate listing platform",
+      "desc": "An E-commerce application for clothing brand for men, women, kids....",
       "link": "https://elegance-snowy.vercel.app/"
     }
   ]
