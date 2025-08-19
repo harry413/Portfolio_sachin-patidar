@@ -8,12 +8,12 @@ export default function Skills() {
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        className="font-clash text-5xl text-center mb-12 font-bold z-20"
+        className="font-clash text-5xl text-center mb-12 font-bold"
       >
         Skills
       </motion.h2>
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-4 z-20">
-      <div className="w-full md:w-1/3 h-86  flex items-center justify-center">
+      <div className="w-full md:w-1/3 h-86  flex items-center justify-center z-20">
         <img src="/models/boyp.PNG" alt="skills image" />
       </div>
       <div className="flex flex-wrap gap-4 justify-center w-full md:w-1/2">
@@ -23,7 +23,7 @@ export default function Skills() {
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             transition={{ delay: i * 0.1 }}
-            className="glass px-6 py-3 rounded-full"
+            className="glass px-6 py-3 rounded-full z-20"
           >
             {skill}
           </motion.div>

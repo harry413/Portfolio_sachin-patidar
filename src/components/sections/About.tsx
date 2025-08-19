@@ -6,11 +6,14 @@ import SplitText from "@/components/ui/SplitText";
 import { TypeAnimation } from "react-type-animation"
 import {FloatingShape} from "@/components/FloatingShape"
 
+import SplashCursor from "@/components/SplashCursor"
+
 export default function About() {
   return (
     <section className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 p-4 relative overflow-hidden">
       
       <FloatingShape />
+      <SplashCursor />
       <motion.div
         initial={{ opacity: 0, y: -80 }}
         whileInView={{ opacity: 1, y: 0 }}
