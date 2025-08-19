@@ -1,63 +1,69 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { motion, useMotionValue, useTransform, useSpring } from "framer-motion"
-import { useEffect, useState } from "react"
+import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
+import { useEffect, useState } from "react";
 
 interface FloatingParticle {
-  id: number
-  x: number
-  y: number
-  size: number
-  delay: number
+  id: number;
+  x: number;
+  y: number;
+  size: number;
+  delay: number;
 }
 
 export function FloatingShape() {
-  const [particles, setParticles] = useState<FloatingParticle[]>([])
-  const [mounted, setMounted] = useState(false)
+  const [particles, setParticles] = useState<FloatingParticle[]>([]);
+  const [mounted, setMounted] = useState(false);
 
-  const mouseX = useMotionValue(0)
-  const mouseY = useMotionValue(0)
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
 
-  const springX = useSpring(mouseX, { stiffness: 100, damping: 30 })
-  const springY = useSpring(mouseY, { stiffness: 100, damping: 30 })
+  const springX = useSpring(mouseX, { stiffness: 100, damping: 30 });
+  const springY = useSpring(mouseY, { stiffness: 100, damping: 30 });
 
-  const backgroundX = useTransform(springX, [0, 1000], [0, 50])
-  const backgroundY = useTransform(springY, [0, 1000], [0, 50])
-  const gridX = useTransform(springX, [0, 1000], [0, -25])
-  const gridY = useTransform(springY, [0, 1000], [0, -25])
-  const orb1X = useTransform(springX, [0, 1000], [0, 100])
-  const orb1Y = useTransform(springY, [0, 1000], [0, 50])
-  const orb2X = useTransform(springX, [0, 1000], [0, -80])
-  const orb2Y = useTransform(springY, [0, 1000], [0, -60])
-  const waveX = useTransform(springX, [0, 1000], [0, 30])
+  const backgroundX = useTransform(springX, [0, 1000], [0, 50]);
+  const backgroundY = useTransform(springY, [0, 1000], [0, 50]);
+  const gridX = useTransform(springX, [0, 1000], [0, -25]);
+  const gridY = useTransform(springY, [0, 1000], [0, -25]);
+  const orb1X = useTransform(springX, [0, 1000], [0, 100]);
+  const orb1Y = useTransform(springY, [0, 1000], [0, 50]);
+  const orb2X = useTransform(springX, [0, 1000], [0, -80]);
+  const orb2Y = useTransform(springY, [0, 1000], [0, -60]);
+  const waveX = useTransform(springX, [0, 1000], [0, 30]);
 
   useEffect(() => {
-    setMounted(true)
+    setMounted(true);
 
     // Generate floating particles
-    const newParticles: FloatingParticle[] = Array.from({ length: 12 }, (_, i) => ({
-      id: i,
-      x: Math.random() * 100,
-      y: Math.random() * 100,
-      size: Math.random() * 60 + 20,
-      delay: Math.random() * 4,
-    }))
+    const newParticles: FloatingParticle[] = Array.from(
+      { length: 12 },
+      (_, i) => ({
+        id: i,
+        x: Math.random() * 100,
+        y: Math.random() * 100,
+        size: Math.random() * 60 + 20,
+        delay: Math.random() * 4,
+      })
+    );
 
-    setParticles(newParticles)
-  }, [])
+    setParticles(newParticles);
+  }, []);
 
   const handleMouseMove = (e: React.MouseEvent) => {
-    const rect = e.currentTarget.getBoundingClientRect()
-    mouseX.set(e.clientX - rect.left)
-    mouseY.set(e.clientY - rect.top)
-  }
+    const rect = e.currentTarget.getBoundingClientRect();
+    mouseX.set(e.clientX - rect.left);
+    mouseY.set(e.clientY - rect.top);
+  };
 
-  if (!mounted) return null
+  if (!mounted) return null;
 
   return (
-    <div className="fixed inset-0 z-10 overflow-hidden absolute" onMouseMove={handleMouseMove}>
+    <div
+      className="fixed inset-0 z-10 overflow-hidden absolute"
+      onMouseMove={handleMouseMove}
+    >
       {/* Gradient Background */}
       <motion.div
         className="inset-0 bg-gradient-to-br from-background via-background/80 to-primary/10"
@@ -164,5 +170,5 @@ export function FloatingShape() {
         }}
       />
     </div>
-  )
+  );
 }

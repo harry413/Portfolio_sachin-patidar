@@ -4,7 +4,22 @@
   "linkedin": "https://www.linkedin.com/in/sachin-patidar-921578213/",
   "email": "sachinpatidar413@gmail.com",
   "phone": "+91-9589005828",
-  "skills": ["React", "Next.js", "TypeScript", "Node.js", "MongoDB", "Tailwindcss", "Bootstrap", "Figma", "Javascript", "HTML/CSS", "C++", "Redux", "Git/Github", "Three.js" ],
+  "skills": [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Node.js",
+    "MongoDB",
+    "Tailwindcss",
+    "Bootstrap",
+    "Figma",
+    "Javascript",
+    "HTML/CSS",
+    "C++",
+    "Redux",
+    "Git/Github",
+    "Three.js"
+  ],
   "projects": [
     {
       "name": "HARRY_Iconhub",
