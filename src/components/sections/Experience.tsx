@@ -77,8 +77,7 @@ export default function Experience() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 2, duration: 0.05, ease: "easeInOut" }}
               >
-                I served as a MERN Developer intern at ShapeAI, Where i was developing my skills and knowledge for building
-                high-performance, user-centric web applications. where i learnt React js , Mongodb, express js, node js, etc..
+                I served as a MERN Developer intern at ShapeAI, Where i was developing my skills and knowledge for building high-performance, user-centric web applications. where i learnt React js , Mongodb, express js, node js, etc..
               </motion.p>
               <br/>
               <motion.p

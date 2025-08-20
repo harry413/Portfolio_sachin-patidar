@@ -8,7 +8,7 @@ export default function Skills() {
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        className="font-clash text-5xl text-center mb-12 font-bold"
+        className="font-clash text-5xl text-center mb-12 font-bold z-20"
       >
         Skills
       </motion.h2>
@@ -16,19 +16,21 @@ export default function Skills() {
       <div className="w-full md:w-1/3 h-86  flex items-center justify-center z-20">
         <img src="/models/boyp.PNG" alt="skills image" />
       </div>
-      <div className="flex flex-wrap gap-4 justify-center w-full md:w-1/2">
+      
+      <div className="flex flex-wrap justify-center w-full md:w-1/2 gap-8 ">
         {data.skills.map((skill, i) => (
           <motion.div
             key={skill}
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             transition={{ delay: i * 0.1 }}
-            className="glass px-6 py-3 rounded-full z-20"
+            className=" z-20 h-full scale-130 gap-8 "
           >
-            {skill}
+           <img src={skill} alt={skill} className=" shadow-lg shadow-gray-800"/>
           </motion.div>
         ))}
       </div>
+      
       </div>
     </section>
   );

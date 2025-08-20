@@ -54,6 +54,7 @@ export default function About() {
         className="text-md md:text-lg text-center"
         />
         </p>
+       
       </GlassCard>
     </section>
   );
