@@ -18,6 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${orbitron.variable}`}>
+      <head>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+        </style>
+      </head>
       <body>{children}</body>
     </html>
   );

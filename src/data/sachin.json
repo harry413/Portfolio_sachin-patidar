@@ -7,18 +7,20 @@
   "skills": [
     "React",
     "Next.js",
+    "HTML",
+    "CSS",
+    "Javascript",
     "TypeScript",
-    "Node.js",
-    "MongoDB",
     "Tailwindcss",
     "Bootstrap",
-    "Figma",
-    "Javascript",
-    "HTML/CSS",
-    "C++",
+    "Matrial Ui",
     "Redux",
     "Git/Github",
-    "Three.js"
+    "Three.js",
+    "Node.js",
+    "MongoDB",
+    "Figma",
+    "C++"
   ],
   "projects": [
     {
