@@ -6,7 +6,6 @@ import SplitText from "@/components/ui/SplitText";
 import { TypeAnimation } from "react-type-animation"
 import {FloatingShape} from "@/components/FloatingShape"
 
-
 export default function About() {
   return (
     <section className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 p-4 relative overflow-hidden">
@@ -54,7 +53,6 @@ export default function About() {
         className="text-md md:text-lg text-center"
         />
         </p>
-       
       </GlassCard>
     </section>
   );

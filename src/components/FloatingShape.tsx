@@ -78,7 +78,7 @@ export function FloatingShape() {
         className="absolute inset-0 opacity-20"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(38, 37, 39, 0.55) 1px, transparent 1px),
+            linear-gradient(rgba(1, 16, 28, 0.55) 1px, transparent 1px),
             linear-gradient(90deg, rgba(38, 37, 39, 0.55) 1px, transparent 1px)
           `,
           backgroundSize: "50px 50px",
@@ -91,7 +91,7 @@ export function FloatingShape() {
       {particles.map((particle) => (
         <motion.div
           key={particle.id}
-          className="absolute rounded-full bg-primary/40 backdrop-blur-sm"
+          className="absolute rounded-full bg-gradient-to-br from-primary/50 to-slate-200/10 backdrop-blur-sm"
           style={{
             left: `${particle.x}%`,
             top: `${particle.y}%`,

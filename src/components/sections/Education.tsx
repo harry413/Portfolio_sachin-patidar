@@ -12,7 +12,7 @@ return (
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="font-clash text-4xl font-bold mb-8"
+            className="google text-4xl font-bold mb-8 bg-gradient-to-br from-orange-400 via-orange-50 to-orange-400 bg-clip-text text-transparent"
           >
             Education
           </motion.h1>

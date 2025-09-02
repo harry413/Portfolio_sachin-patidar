@@ -28,28 +28,39 @@
   ],
   "projects": [
     {
-      "name": "HARRY_Iconhub",
+      "name": "Harryiconify",
       "stack": ["Next.js", "TailwindCSS", "TypeScript"],
       "desc": "Application for better Ui this provide animated and dyamic icons and User can also build and upload his icons",
+      "src": "/projects/harryiconify.png",
       "link": "https://iconhub-mu.vercel.app/"
     },
     {
       "name": "HRIzon",
       "stack": ["Next.js", "TailwindCSS", "TypeScript"],
       "desc": "This help or reduce the effort for searching right people based on skills, experience.... ",
+      "src" : "/projects/hrizon.png",
       "link": "https://hr-izon.vercel.app/"
     },
     {
       "name": "CAR RENTAL",
       "stack": ["Next.js", "TailwindCSS"],
       "desc": "Application for rent a car for temparory work ....",
+      "src": "/projects/car-rental.png",
       "link": "https://car-rental-eight-amber.vercel.app"
     },
     {
       "name": "ELEGANCE",
-      "stack": ["Nextjs, tailwindcss, framer-motion"],
+      "stack": ["Nextjs", "tailwindcss", "framer-motion"],
       "desc": "An E-commerce application for clothing brand for men, women, kids....",
+      "src": "/projects/elegance.png",
       "link": "https://elegance-snowy.vercel.app/"
+    },
+    {
+      "name": "Supreme Group",
+      "stack": ["Typescript", "tailwindcss", "Javascript"],
+      "desc": "Soft trim and NVH Solution for seamless rides driven by performance....",
+      "src": "/projects/supreme.png",
+      "link": "https://supreme-group-lemon-one.vercel.app/"
     }
   ]
 }

@@ -27,10 +27,10 @@ export default function Splash({ onFinish }: { onFinish: () => void }) {
       initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
         transition={{ duration: 1, ease: "circInOut", delay: 0.5 }}
-      className="text-5xl font-bold bg-gradient-to-br from-pink-600 via-orange-100 to-pink-500  bg-clip-text text-transparent">Sachin Patidar</motion.span>
+      className="text-5xl font-bold bg-gradient-to-b from-black  to-black/10  bg-clip-text text-transparent">Sachin Patidar</motion.span><br/>
       {/* Center line */}
       <motion.div
-        className="absolute h-0.5 bg-gradient-to-br from-pink-800 via-orange-900 to-pink-800  w-full top-1/2 translate-y-1/2"
+        className="absolute h-0.5 bg-gradient-to-br from-slate-50 to-gray-50  w-full top-1/2 translate-y-1/2"
         initial={{ scaleX: 1 }}
         animate={{ scaleX: 0 }}
         transition={{ duration: 1, ease: "circInOut", delay: 0.5 }}

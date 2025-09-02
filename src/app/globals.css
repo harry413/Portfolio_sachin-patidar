@@ -2,7 +2,9 @@
 
 @custom-variant dark (&:is(.dark *));
 
-.berkshire-swash-regular {
+
+
+.google {
   font-family: "Berkshire Swash", serif;
   font-weight: 400;
   font-style: normal;
@@ -22,7 +24,7 @@
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     -webkit-animation: gradient 15s ease infinite;
-}
+  }
 
   @keyframes gradient {
     0% {
@@ -155,6 +157,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }

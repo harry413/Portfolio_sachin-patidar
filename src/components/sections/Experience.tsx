@@ -11,8 +11,8 @@ export default function Experience() {
             <motion.h1
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 2, duration: 0.05, ease: "easeInOut" }}
-              className="font-clash text-4xl font-bold mb-8"
+              transition={{ delay: 1, duration: 0.05, ease: "easeInOut" }}
+              className="google text-4xl font-bold mb-8 bg-gradient-to-br from-orange-600 via-orange-50 to-orange-600 bg-clip-text text-transparent"
             >
               Experience
             </motion.h1>
@@ -20,7 +20,7 @@ export default function Experience() {
               <motion.h1
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 2, duration: 0.05, ease: "easeInOut" }}
+                transition={{ delay: 1, duration: 0.05, ease: "easeInOut" }}
                 className="text-lg font-bold mb-2"
               >
                 Frontend Developer | Impetrosys Software Solution Pvt Ltd
@@ -28,7 +28,7 @@ export default function Experience() {
               <motion.p
                 initial={{ opacity: 0, y: 80 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 2, duration: 0.05, ease: "easeInOut" }}
+                transition={{ delay: 1, duration: 0.05, ease: "easeInOut" }}
                 className="text-md text-gray-300 mb-4"
               >
                 Duration: 2 Years(Jan-2023 to Dec-2024)
@@ -36,7 +36,7 @@ export default function Experience() {
               <motion.p
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 2, duration: 0.05, ease: "easeInOut" }}
+                transition={{ delay:1, duration: 0.05, ease: "easeInOut" }}
               >
                 I served as a Frontend Developer at Impetrosys Software
                 Solution, Where i was responsible for developing and maintaining
@@ -48,7 +48,7 @@ export default function Experience() {
               <motion.p
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 2, duration: 0.05, ease: "easeInOut" }}
+                transition={{ delay:1, duration: 0.05, ease: "easeInOut" }}
               >
                 This role gave me hand-on experience in the full development
                 lifecycle, from initial design to deployment and optimization.
@@ -59,7 +59,7 @@ export default function Experience() {
               <motion.h1
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 2, duration: 0.05, ease: "easeInOut" }}
+                transition={{ delay:1, duration: 0.05, ease: "easeInOut" }}
                 className="text-lg font-bold mb-2"
               >
                 Full Stack Developer Intern | ShapeAI (Mumbai)
@@ -67,7 +67,7 @@ export default function Experience() {
               <motion.p
                 initial={{ opacity: 0, y: 80 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 2, duration: 0.05, ease: "easeInOut" }}
+                transition={{ delay:1, duration: 0.05, ease: "easeInOut" }}
                 className="text-md text-gray-300 mb-4"
               >
                 Duration: 3 Months(Jul-2022 to Sep-2022)
@@ -75,7 +75,7 @@ export default function Experience() {
               <motion.p
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 2, duration: 0.05, ease: "easeInOut" }}
+                transition={{ delay:1, duration: 0.05, ease: "easeInOut" }}
               >
                 I served as a MERN Developer intern at ShapeAI, Where i was developing my skills and knowledge for building high-performance, user-centric web applications. where i learnt React js , Mongodb, express js, node js, etc..
               </motion.p>
@@ -83,7 +83,7 @@ export default function Experience() {
               <motion.p
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 2, duration: 0.05, ease: "easeInOut" }}
+                transition={{ delay:1, duration: 0.05, ease: "easeInOut" }}
               >
                 This role help me to upgrade my skills and my theory knowledge to practical product.
               </motion.p>
@@ -93,7 +93,7 @@ export default function Experience() {
         <motion.div
           initial={{ opacity: 0, y: 80 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 2, duration: 0.2, ease: "easeInOut" }}
+          transition={{ delay:1, duration: 0.2, ease: "easeInOut" }}
           className="w-full md:w-1/3 h-86 md:h-[600px] flex items-center justify-center z-20"
         >
           <img src="/models/boyexp.PNG" alt="exp image" />

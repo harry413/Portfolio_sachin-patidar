@@ -1,9 +1,7 @@
-import { Inter, Orbitron } from "next/font/google";
+
 import "./globals.css";
 
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-orbitron" });
 
 
 export const metadata = {
@@ -17,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${orbitron.variable}`}>
+    <html lang="en" className={``}>
       <head>
         <style>
           @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
