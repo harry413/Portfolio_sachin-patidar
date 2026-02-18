@@ -15,7 +15,7 @@ export default function Hanging() {
 
       const timer = setTimeout(() => {
         setVisible(false);
-      }, 10000);
+      }, 5000);
 
       return () => clearTimeout(timer);
     }
@@ -33,15 +33,15 @@ export default function Hanging() {
           <motion.img
             src="/hanging.png"   // 👈 replace with your image path
             alt="Hanging"
-            className=" w-80 h-80 select-none"
+            className="w-80 h-80 select-none"
             
             initial={{ y: -200, opacity: 0, rotate: 0 }}
             animate={{
-              y: 0,
+              y: -20,
               opacity: 1,
               rotate: [0, 8, -8, 6, -6, 3, -3, 0], // natural swing
             }}
-            exit={{ opacity: 0, scale: 0.8 }}
+            exit={{ opacity: 0, scale: 0.5 }}
             
             transition={{
               y: { type: "spring", stiffness: 120, damping: 12 },
