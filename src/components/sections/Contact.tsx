@@ -29,6 +29,9 @@ export default function Contact() {
             <BiLogoGmail className="text-3xl hover:text-red-500" />
           </a>
         </div>
+        <div className="mx-2 flex items-center justify-center mt-4 text-xl text-gray-200">
+          {data.phone}
+        </div>
       </GlassCard>
     </section>
   );

@@ -6,10 +6,10 @@ export default function Splash({ onFinish }: { onFinish: () => void }) {
   const [play] = useSound("/sounds/swoosh.aiff", { volume: 0.3 });
 
   return (
-    <div className="fixed inset-0 bg-gradient-to-b from-slate-100 via-slate-700 to-slate-200 z-50 flex items-center justify-center overflow-hidden">
+    <div className="fixed inset-0 bg-gradient-to-b from-slate-700 via-slate-100 to-slate-700 z-50 flex items-center justify-center overflow-hidden">
       {/* Left curtain */}
       <motion.div
-        className="absolute top-0 left-0 z-20 h-full w-1/2 bg-gradient-to-b from-slate-950 via-slate-400 to-slate-950"
+        className="absolute top-0 left-0 z-20 h-full w-1/2 bg-gradient-to-r from-slate-950 to-slate-400"
         initial={{ x: 0 }}
         animate={{ x: "-100%" }}
         transition={{ duration: 1, ease: "circInOut", delay: 0.5 }}
@@ -17,7 +17,7 @@ export default function Splash({ onFinish }: { onFinish: () => void }) {
       />
       {/* Right curtain */}
       <motion.div
-        className="absolute top-0 z-20 right-0 h-full w-1/2 bg-gradient-to-b from-slate-950 via-slate-400 to-slate-950"
+        className="absolute top-0 z-20 right-0 h-full w-1/2 bg-gradient-to-l from-slate-950 to-slate-400 "
         initial={{ x: 0 }}
         animate={{ x: "100%" }}
         transition={{ duration: 1, ease: "circInOut", delay: 0.5 }}
@@ -26,16 +26,9 @@ export default function Splash({ onFinish }: { onFinish: () => void }) {
       onAnimationComplete={onFinish}
       initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
+        
         transition={{ duration: 1, ease: "circInOut", delay: 0.5 }}
-      className="text-5xl font-bold bg-gradient-to-b from-black  to-black/10  bg-clip-text text-transparent">Sachin Patidar</motion.span><br/>
-      {/* Center line */}
-      <motion.div
-        className="absolute h-0.5 bg-gradient-to-br from-slate-50 to-gray-50  w-full top-1/2 translate-y-1/2"
-        initial={{ scaleX: 1 }}
-        animate={{ scaleX: 0 }}
-        transition={{ duration: 1, ease: "circInOut", delay: 0.5 }}
-        onAnimationComplete={onFinish}
-      />   
+      className="text-6xl font-bold bg-gradient-to-b from-black/10 to-black/10 bg-clip-text text-transparent p-4 ">Loading....</motion.span><br/>
     </div>
   );
 }
