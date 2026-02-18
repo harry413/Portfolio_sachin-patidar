@@ -41,7 +41,7 @@ export default function Hanging() {
               opacity: 1,
               rotate: [0, 8, -8, 6, -6, 3, -3, 0], // natural swing
             }}
-            exit={{ opacity: 0, scale: 0.5 }}
+            exit={{ opacity: 0, scale: 0 }}
             
             transition={{
               y: { type: "spring", stiffness: 120, damping: 12 },
@@ -54,7 +54,7 @@ export default function Hanging() {
             }}
 
             style={{
-              transformOrigin: "top right"
+              transformOrigin: "top center"
             }}
           />
         </div>
