@@ -15,7 +15,7 @@ export default function Hanging() {
 
       const timer = setTimeout(() => {
         setVisible(false);
-      }, 5000);
+      }, 8000);
 
       return () => clearTimeout(timer);
     }
