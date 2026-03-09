@@ -12,21 +12,26 @@ import { fairyDustCursor } from "cursor-effects";
 
 export default function Home() {
   const [show, setShow] = useState(false);
+
+
    useEffect(() => {
     fairyDustCursor();
     return () => {};
    }, [])
+
    
   return (
     <>
+
       {!show && <Splash onFinish={() => setShow(true)} />}
       {show && (
         <main className="animated-gradient min-h-screen">
+         
           <About />
           <Experience />
-          <Education />
           <Skills />
           <Projects />
+          {/* <Education /> */}
           <Contact />
         </main>
       )}

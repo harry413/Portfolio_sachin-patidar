@@ -12,7 +12,7 @@ export default function Experience() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.05, ease: "easeInOut" }}
-              className="google text-4xl font-bold mb-8 bg-gradient-to-br from-orange-600 via-orange-50 to-orange-600 bg-clip-text text-transparent"
+              className="google text-4xl font-bold mb-8 font-orbitron text-slate-100/60"
             >
               Experience
             </motion.h1>

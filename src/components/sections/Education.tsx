@@ -12,7 +12,7 @@ return (
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="google text-4xl font-bold mb-8 bg-gradient-to-br from-orange-400 via-orange-50 to-orange-400 bg-clip-text text-transparent"
+            className="google text-4xl font-bold mb-8 font-orbitron text-slate-100/60"
           >
             Education
           </motion.h1>
@@ -34,7 +34,6 @@ return (
             >
               Jun 2018 - May 2022
             </motion.p>
-            
           </div>
           <div className="flex flex-col items-start justify-center w-full border-b border-gray-400 mb-4">
             <motion.h1
@@ -43,7 +42,8 @@ return (
               transition={{ delay: 2, duration: 0.2, ease: "easeInOut" }}
               className="text-lg font-bold mb-2"
             >
-              High School 12th (Science) | Jawahar Navodaya Vidhyalaya (JNV), Ujjain | <i> 8.0 CGPA</i>
+              High School 12th (Science) | Jawahar Navodaya Vidhyalaya (JNV),
+              Ujjain | <i> 8.0 CGPA</i>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 80 }}
@@ -61,7 +61,8 @@ return (
               transition={{ delay: 2, duration: 0.2, ease: "easeInOut" }}
               className="text-lg font-bold mb-2"
             >
-              High School 10th | Jawahar Navodaya Vidhyalaya (JNV), Ujjain |  <i>8.0 CGPA</i>
+              High School 10th | Jawahar Navodaya Vidhyalaya (JNV), Ujjain |{" "}
+              <i>8.0 CGPA</i>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 80 }}

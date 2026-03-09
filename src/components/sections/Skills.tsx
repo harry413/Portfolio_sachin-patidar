@@ -8,7 +8,7 @@ export default function Skills() {
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        className="google text-5xl text-center mb-12 font-bold z-20 bg-gradient-to-br from-orange-400 via-orange-50 to-orange-400 bg-clip-text text-transparent"
+        className="google text-5xl text-center mb-12 font-bold z-20 font-orbitron text-slate-100/60"
       >
         Skills
       </motion.h2>

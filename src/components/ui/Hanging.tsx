@@ -15,7 +15,7 @@ export default function Hanging() {
 
       const timer = setTimeout(() => {
         setVisible(false);
-      }, 8000);
+      }, 10000);
 
       return () => clearTimeout(timer);
     }
@@ -26,12 +26,10 @@ export default function Hanging() {
       {visible && (
         <div className="fixed inset-0 flex justify-center items-start pointer-events-none z-50">
           
-          {/* Rope */}
-          {/* <div className="absolute top-0 w-[2px] h-24 bg-gray-400" /> */}
 
           {/* Hanging Object */}
           <motion.img
-            src="/hanging.png"   // 👈 replace with your image path
+            src="/hanging.png"   
             alt="Hanging"
             className="w-80 h-80 select-none"
             
@@ -39,7 +37,7 @@ export default function Hanging() {
             animate={{
               y: -20,
               opacity: 1,
-              rotate: [0, 8, -8, 6, -6, 3, -3, 0], // natural swing
+              rotate: [0, 8, -8, 6, -6, 3, -3, 0], 
             }}
             exit={{ opacity: 0, scale: 0 }}
             

@@ -14,15 +14,27 @@ export default function Contact() {
         <img src="/models/boycon.PNG" alt="contact image" />
       </div>
       <GlassCard className="max-w-xl mx-auto text-center z-20">
-        <h2 className="google text-4xl mb-4 border-b border-gray-200 pb-2 bg-gradient-to-br from-orange-400 via-orange-50 to-orange-400 bg-clip-text text-transparent font-bold">Get In Touch</h2>
+        <h2 className="google text-4xl mb-4 border-b border-gray-200 pb-2 font-orbitron text-slate-100/60 font-bold">
+          Get In Touch
+        </h2>
         <p className="mb-6">
           Feel free to drop an e-mail or call me. Let’s create something great!
         </p>
         <div className="flex items-center justify-center">
-          <a href={data.github} target="_blank" rel="noopener noreferrer" className="mx-2">
+          <a
+            href={data.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mx-2"
+          >
             <IoLogoGithub className="text-3xl hover:text-black" />
           </a>
-          <a href={data.linkedin} target="_blank" rel="noopener noreferrer" className="mx-2">
+          <a
+            href={data.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mx-2"
+          >
             <TbBrandLinkedinFilled className="text-3xl hover:text-blue-500" />
           </a>
           <a href={`mailto:${data.email}`} className="mx-2">

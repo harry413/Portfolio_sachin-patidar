@@ -16,6 +16,7 @@ export default function About() {
         transition={{ delay: 1, duration: 0.2, ease: "easeInOut" }}
         className="w-full md:w-1/3 h-86  flex items-center justify-center relative z-20">
         <img src="/models/avatar.webp" alt="hero image" />
+        {/* <video src='/models/harry.mp4' type='video/mp4' /> */}
       </motion.div>
 
       {/* Text Card */}
