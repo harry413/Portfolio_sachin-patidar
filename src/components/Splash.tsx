@@ -3,6 +3,19 @@ import { motion } from "framer-motion";
 import { useSound } from "use-sound";
 import Hanging from "@/components/ui/Hanging";
 
+function getGreeting() {
+    const currentHour = new Date().getHours();
+
+    if (currentHour < 12) {
+        return "Good Morning";
+    } else if (currentHour < 18) {
+        return "Good Afternoon";
+    } else {
+        return "Good Evening";
+    }
+}
+const time = getGreeting();
+
 export default function Splash({ onFinish }: { onFinish: () => void }) {
   const [play] = useSound("/sounds/swoosh.aiff", { volume: 0.3 });
 
@@ -125,9 +138,9 @@ export default function Splash({ onFinish }: { onFinish: () => void }) {
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1, delay: 0.9 }}
-        className="text-6xl font-bold bg-gradient-to-b from-black/10 to-black/10 bg-clip-text text-transparent p-4 z-10"
+        className="text-4xl md:text-6xl font-bold bg-gradient-to-b from-black/10 to-black/10 bg-clip-text text-transparent p-4 z-10"
       >
-        Loading....
+        Hello , {time}
       </motion.span>
     </motion.div>
   );
