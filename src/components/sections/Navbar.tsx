@@ -89,7 +89,7 @@ export default function Navbar() {
                 <a
                   href={item.href}
                   onClick={closeMobileMenu}
-                  className="block w-full px-3 py-2 rounded-md hover:bg-white/20 transition-colors"
+                  className="block w-full px-3 py-2 rounded-md hover:bg-white/20 transition-colors text-xl"
                 >
                   {item.label}
                 </a>
