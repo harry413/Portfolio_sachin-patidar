@@ -108,7 +108,7 @@ export default function Services() {
   };
 
   return (
-    <section className="py-16 px-4 bg-none z-50 relative flex flex-col items-center justify-center">
+    <section id="services" className="py-16 px-4 bg-none z-20 relative flex flex-col items-center justify-center">
       <div className="max-w-6xl mx-auto text-center">
         <motion.h2
           initial={{ opacity: 0, y: -40 }}
@@ -130,8 +130,8 @@ export default function Services() {
               <button
                 key={type}
                 onClick={() => setPlan(type)}
-                className={`px-4 py-2 rounded-full text-sm capitalize transition cursor-pointer  ${
-                  plan === type ? "bg-gray-500 text-white" : "text-gray-200"
+                className={`px-4 py-2 rounded-full text-sm capitalize transition duration-150 ease-in-out cursor-pointer  ${
+                  plan === type ? "bg-gray-200/30 text-white" : "text-gray-200"
                 }`}
               >
                 {type}

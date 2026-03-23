@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Splash from "@/components/Splash";
+import Navbar from "@/components/sections/Navbar";
 import About from "@/components/sections/About";
 import Skills from "@/components/sections/Skills";
 import Projects from "@/components/sections/Projects";
@@ -26,16 +27,18 @@ export default function Home() {
 
       {!show && <Splash onFinish={() => setShow(true)} />}
       {show && (
-        <main className="animated-gradient min-h-screen">
-         
-          <About />
-          <Experience />
-          <Skills />
-          <Projects />
-          {/* <Education /> */}
-          <Services />
-          <Contact />
-        </main>
+        <>
+          <Navbar />
+          <main id="home" className="animated-gradient min-h-screen pt-20">
+            <About />
+            <Experience />
+            <Skills />
+            <Projects />
+            {/* <Education /> */}
+            <Services />
+            <Contact />
+          </main>
+        </>
       )}
     </>
   );
