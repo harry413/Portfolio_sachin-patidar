@@ -82,14 +82,14 @@ export default function Navbar() {
         </div>
       </nav>
       {mobileOpen && (
-        <div className="md:hidden border-t border-white/10 bg-black/20">
+        <div className="md:hidden border-t border-white/10 bg-black/40 mt-20">
           <ul className="flex flex-col gap-1 px-4 pb-4 pt-2 text-white">
             {navItems.map((item) => (
               <li key={item.href}>
                 <a
                   href={item.href}
                   onClick={closeMobileMenu}
-                  className="block w-full px-3 py-2 rounded-md hover:bg-white/20 transition-colors text-xl"
+                  className="block w-full px-3 py-2 rounded-md hover:bg-white/20 transition-colors text-2xl"
                 >
                   {item.label}
                 </a>
