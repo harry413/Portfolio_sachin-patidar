@@ -44,7 +44,8 @@ export default function About() {
         <p>
           <TypeAnimation
           sequence={[
-            'I craft intuitive, high-performance web experiences with React, Next js and the whole modern stack. Let’s build something amazing together.',
+            'I build fast, scalable, and user-centric web applications using React and modern frontend tools.
+             With 2+ years of industry experience, I focus on performance, clean architecture, and great user experience.',
             1000
           ]} 
           wrapper="span"
