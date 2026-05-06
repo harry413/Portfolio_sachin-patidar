@@ -30,29 +30,29 @@
   "projects": [
     {
       "name": "Harryiconify",
-      "stack": ["Next.js", "TailwindCSS", "TypeScript"],
-      "desc": "Application for better Ui this provide animated and dyamic icons and User can also build and upload his icons",
+      "stack": ["Next.js", "TailwindCSS", "TypeScript", "API", "npm package", "UI Component Library"],
+      "desc": "HarryIconify (UI Component Library / Web App)\n\nDeveloped responsive web applications using React.js improving user experience\nBuilt reusable components reducing development time by 25%\nIntegrated REST APIs for dynamic data rendering",
       "src": "/projects/harryiconify.png",
       "link": "https://iconhub-mu.vercel.app/"
     },
     {
       "name": "HRIzon",
-      "stack": ["Next.js", "TailwindCSS", "TypeScript"],
-      "desc": "This help or reduce the effort for searching right people based on skills, experience.... ",
+      "stack": ["Next.js", "TailwindCSS", "TypeScript", "AI"],
+      "desc": "HRIzon (HR Management Platform)\n\nBuilt a web application to match candidates with job requirements based on skills and experience\nDesigned responsive UI for job listings and candidate filtering\nImplemented search and filtering functionality for efficient hiring workflow\nFocused on user-friendly design and performance optimization",
       "src" : "/projects/hrizon.png",
       "link": "https://hr-izon.vercel.app/"
     },
     {
       "name": "CAR RENTAL",
       "stack": ["Next.js", "TailwindCSS"],
-      "desc": "Application for rent a car for temparory work ....",
+      "desc": "Car Rental (Car Rental Web App)\n\nDeveloped a responsive car rental web application using Next.js and API integration\nImplemented dynamic UI updates for car listings and booking functionality\nOptimized performance and ensured smooth user experience across devices\nIntegrated third-party APIs for real-time data rendering",
       "src": "/projects/car-rental.png",
       "link": "https://car-rental-eight-amber.vercel.app"
     },
     {
       "name": "ELEGANCE",
       "stack": ["Nextjs", "tailwindcss", "framer-motion"],
-      "desc": "An E-commerce application for clothing brand for men, women, kids....",
+      "desc": "Elegance (E-commerce Web App)\n\nDeveloped a responsive e-commerce platform using React.js and API integration\nImplemented shopping cart functionality with dynamic UI updates\nOptimized performance and ensured smooth user experience across devices\nIntegrated product APIs for real-time data rendering",
       "src": "/projects/elegance.png",
       "link": "https://elegance-snowy.vercel.app/"
     },
