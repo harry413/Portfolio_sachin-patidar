@@ -6,7 +6,7 @@ export default function Education(){
 
 return (
   <div>
-    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center p-4">
+    <section className="min-h-screen mt-20 flex flex-col md:flex-row items-center justify-center p-4">
       <GlassCard className="w-full md:w-1/2 z-20">
         <div className="flex flex-col items-center justify-center">
           <motion.h1

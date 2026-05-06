@@ -5,7 +5,7 @@ import GlassCard from "@/components/ui/GlassCard";
 export default function Experience() {
   return (
     <div>
-      <section id="experience" className="min-h-screen flex flex-col md:flex-row items-center justify-center p-4">
+      <section id="experience" className="pt-24 flex flex-col md:flex-row items-center justify-center p-4">
         <GlassCard className="w-full md:w-1/2 z-20">
           <div className="flex flex-col items-center justify-center w-full">
             <motion.h1

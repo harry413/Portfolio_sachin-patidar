@@ -9,7 +9,7 @@ import { FcPhoneAndroid } from "react-icons/fc";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 flex flex-col md:flex-row items-center justify-center p-2 z-20">
+    <section id="contact" className="min-h-screen pt-24 flex flex-col md:flex-row items-center justify-center p-2 z-20">
       <div className="w-full md:w-1/3 h-86 py-8 flex items-center justify-center mb-8 md:mb-0 z-10">
         <img src="/models/boycon.PNG" alt="contact image" />
       </div>

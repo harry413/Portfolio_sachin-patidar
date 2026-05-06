@@ -1,7 +1,13 @@
 import { motion } from "framer-motion";
 import { type ChangeEvent, type FormEvent, useState } from "react";
 import { Code, Database, Layout, Smartphone } from "lucide-react";
-import Modal from "../ui/Modal";
+import Modal from "./Modal";
+import emailjs from "emailjs-com";
+
+const EmailKey= 'sL4Pt5EkVRNtylhG2';
+// const EmailPasswordKey= 'YDTPp_RZJOkdKhRcVDP_H';
+const EmailTemplet = 'template_5a6qh5f';
+const EmailServiceId = 'service_ihysgqg';
 
 const services = [
   {
@@ -9,9 +15,9 @@ const services = [
     description: "Modern UI with React, Tailwind, animations and performance optimization.",
     icon: <Layout className="w-10 h-10" />,
     pricing: {
-      hourly: "$15/hr",
-      monthly: "$1200/mo",
-      project: "$300+",
+      hourly: "$10/hr",
+      monthly: "$200/mo",
+      project: "$850+",
     },
   },
   {
@@ -19,9 +25,9 @@ const services = [
     description: "REST APIs, authentication, scalable server-side logic using Node.js.",
     icon: <Code className="w-10 h-10" />,
     pricing: {
-      hourly: "$20/hr",
-      monthly: "$1500/mo",
-      project: "$500+",
+      hourly: "$12/hr",
+      monthly: "$250/mo",
+      project: "$900+",
     },
   },
   {
@@ -29,9 +35,9 @@ const services = [
     description: "Database design, optimization, and real-time data handling.",
     icon: <Database className="w-10 h-10" />,
     pricing: {
-      hourly: "$18/hr",
-      monthly: "$1300/mo",
-      project: "$400+",
+      hourly: "$10/hr",
+      monthly: "$200/mo",
+      project: "$800+",
     },
   },
   {
@@ -39,9 +45,9 @@ const services = [
     description: "Complete web applications from frontend to backend deployment.",
     icon: <Smartphone className="w-10 h-10" />,
     pricing: {
-      hourly: "$25/hr",
-      monthly: "$2000/mo",
-      project: "$800+",
+      hourly: "$15/hr",
+      monthly: "$350/mo",
+      project: "$1100+",
     },
   },
 ];
@@ -80,35 +86,30 @@ export default function Services() {
 
     setLoading(true);
     setError(null);
+emailjs
+      .send(
+        EmailServiceId,
+        EmailTemplet,
+        formValues,
+        EmailKey
+      ).then(
+        () => {
+          setLoading(false)
+          alert("Message sent successfully!");
+        },
+        (error) => {
+          setError(error);
+          alert("Failed to send message");
+        }
+      );
+  
 
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          service: activeService.title,
-          plan,
-          ...formValues,
-        }),
-      });
-
-      const result = await response.json();
-
-      if (!response.ok) {
-        throw new Error(result?.error ?? "Failed to send request.");
-      }
-
-      setSubmitted(true);
-    } catch (err) {
-      console.error("Failed to send contact request", err);
-      setError((err as Error).message);
-    } finally {
-      setLoading(false);
-    }
+    setLoading(false);
+    setSubmitted(true);
   };
 
   return (
-    <section id="services" className="py-16 px-4 bg-none z-20 relative flex flex-col items-center justify-center">
+    <section id="services" className="min-h-screen pt-24 px-4 bg-none z-20 relative flex flex-col items-center justify-center">
       <div className="max-w-6xl mx-auto text-center">
         <motion.h2
           initial={{ opacity: 0, y: -40 }}
@@ -176,8 +177,7 @@ export default function Services() {
           ))}
         </div>
       </div>
-
-      <Modal
+             <Modal
         open={!!activeService}
         onClose={closeRequest}
         title={activeService ? `Hire me for ${activeService.title}` : undefined}
@@ -272,6 +272,7 @@ export default function Services() {
           </div>
         ) : null}
       </Modal>
+     
     </section>
   );
 }

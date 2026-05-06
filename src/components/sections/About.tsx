@@ -8,7 +8,7 @@ import {FloatingShape} from "@/components/FloatingShape";
 
 export default function About() {
   return (
-    <section id="home" className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 p-4 relative overflow-hidden">
+    <section id="home" className=" mt-20 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 p-4 relative overflow-hidden">
       <FloatingShape />
       <motion.div
         initial={{ opacity: 0, y: -80 }}

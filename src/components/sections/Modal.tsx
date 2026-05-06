@@ -27,7 +27,7 @@ export default function Modal({ open, onClose, title, children, className }: Mod
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 overflow-y-scroll "
       onClick={onClose}
       role="dialog"
       aria-modal="true"

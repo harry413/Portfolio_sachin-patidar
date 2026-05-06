@@ -6,7 +6,7 @@ import { IoLogoGithub } from "react-icons/io";
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 px-4 z-20 relative flex flex-col items-center justify-center">
+    <section id="projects" className="pt-24 px-4 z-20 relative flex flex-col items-center justify-center">
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

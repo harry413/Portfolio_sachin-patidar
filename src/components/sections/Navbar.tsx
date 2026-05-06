@@ -17,16 +17,19 @@ export default function Navbar() {
   const closeMobileMenu = () => setMobileOpen(false);
 
   return (
-    <header className="fixed top-8 left-18 right-18 z-50">
-      <nav className="glass border border-white/20 shadow-lg shadow-black/30 backdrop-blur-xl bg-white/10 backdrop-filter transition-all duration-300 rounded-full">
+    <header className="fixed  top-0 left-0 right-0 md:top-8 md:left-18 md:right-18 z-30">
+      <nav className="glass border border-white/20 shadow-lg shadow-black/30 backdrop-blur-xl bg-white/10 backdrop-filter transition-all duration-300 md:rounded-full ">
         <div className="mx-auto w-full md:w-11/12 lg:w-10/12 2xl:w-9/12 px-4 sm:px-6 py-3 md:py-4 flex items-center justify-between">
           <a
             href="#home"
             className="text-xl sm:text-2xl font-bold tracking-wide text-white hover:text-cyan-300 inline-flex items-center gap-2"
             onClick={closeMobileMenu}
           >
-            <span className="inline-block w-8 h-8 rounded-full bg-cyan-400/70 border border-white/40" />
-            <span>Sachin</span>
+            <img
+              src="/models/avatar.webp"
+              className="w-8 h-8"
+              alt="hero image"
+            />
           </a>
 
           <button
@@ -82,7 +85,7 @@ export default function Navbar() {
         </div>
       </nav>
       {mobileOpen && (
-        <div className="md:hidden border-t border-white/10 bg-black/40 mt-20">
+        <div className="md:hidden border-t border-white/10 bg-black/40 ">
           <ul className="flex flex-col gap-1 px-4 pb-4 pt-2 text-white">
             {navItems.map((item) => (
               <li key={item.href}>

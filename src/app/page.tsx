@@ -30,6 +30,7 @@ export default function Home() {
         <>
           <Navbar />
           <main id="home" className="animated-gradient min-h-screen pt-20">
+            
             <About />
             <Experience />
             <Skills />

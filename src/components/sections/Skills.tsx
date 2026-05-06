@@ -4,7 +4,7 @@ import data from "@/data/sachin.json";
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 px-4 z-20">
+    <section id="skills" className=" pt-24 px-4 z-20">
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
